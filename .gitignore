@@ -1,0 +1,7 @@
+*.pyc
+settings.py
+*.idea/
+moniteur.log
+tableau_api_calls/workbook_archiving.log
+*/static/admin/
+*/dashboard/migrations/

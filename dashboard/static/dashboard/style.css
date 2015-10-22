@@ -1,0 +1,27 @@
+body{
+    background: #FFFFFF;
+    color: #000000;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+h1{
+    font-size: 22pt;
+    font-family: Helvetica, Arial, Sanserif;
+}
+
+#header-title{
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 40px;
+}
+
+#description-body{
+    width: 600px;
+}
+
+#description{
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 40px;
+}

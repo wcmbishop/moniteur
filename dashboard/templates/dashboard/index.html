@@ -1,0 +1,35 @@
+{% load staticfiles %}
+
+<html>
+<head>
+    <title>moniteur</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'dashboard/style.css' %}" />
+</head>
+<body>
+
+<div id="header-title">
+
+    <img src="{% static 'dashboard/images/logo.png' %}" width="400px" />
+
+</div>
+
+<div id="description">
+
+        <div id="description-body">
+            <h1>Moniteur is an automated monitoring system for Tableau. It provides a way to inform developers when their workbooks and data connections are affecting performance through misuse. The goal is a better Tableau experience.</h1>
+        </div>
+
+</div>
+
+<div id="infraction-list">
+
+    {% for infraction_type in infraction_types %}
+    <li>{{ infraction_type.infraction_type }}</li>
+    {% endfor %}
+
+</div>
+
+
+</body>
+
+</html>
