@@ -17,7 +17,6 @@ import moniteur_settings as settings
 import datetime
 from datetime import timedelta
 import random
-import moniteur_settings
 from strudelpy import SMTP, Email
 from tableau_rest_api.tableau_rest_api import *
 
@@ -400,12 +399,12 @@ def get_object_url(infraction):
     """
 
     if infraction['object_type'] == "Datasource":
-        object_url = "http://bi.teslamotors.com/#/datasources?search=%s" % infraction['object_name']
-        return object_url
-
+        object_url = "%s/#/datasources?search=%s" % (settings.TABLEAU_SERVER, infraction['object_name'])
     elif infraction['object_type'] == "Workbook":
-        object_url = "http://bi.teslamotors.com/#/workbooks/%s/views" % infraction['object_id']
-        return object_url
+        object_url = "%s/#/workbooks/%s/views" % (settings.TABLEAU_SERVER, infraction['object_id'])
+    else:
+        object_url = None
+    return object_url
 
 
 def case_exists(infraction):

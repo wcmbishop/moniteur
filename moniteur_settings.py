@@ -50,7 +50,7 @@ TABLEAU_API = {'server': '',
 # TABLEAU_URLS
 # -----------------
 # URL prefixes for use in emails.
-
+TABLEAU_SERVER = 'http://tableau.server.com'
 TABLEAU_URLS = {'workbook': 'http://',
                 'datasource': 'http://'}
 
