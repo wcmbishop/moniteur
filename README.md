@@ -15,7 +15,7 @@ More specifically, `moniteur` includes a **backend** (scripts and a database) th
 #### Software stack
 `Moniteur` is written in [Python 2.7](https://www.python.org/downloads/) and built on the [Django](https://www.djangoproject.com/) framework. It uses a MySQL database for data storage by default, but you can substitute your own RDBMS supported by Django's ORM.  
 
-**Create by:** Peter Woyzbun  
+**Created by:** Peter Woyzbun  
 **Maintained by:** Will Bishop, Kevin Chiang  
 
 <br>
